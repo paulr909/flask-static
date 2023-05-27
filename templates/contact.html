@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <main class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner">
+                        <h1>Contact</h1>
+                        {% for category, message in get_flashed_messages(with_categories=True) %}
+                            <div class="alert alert-{{ category }} alert-dismissible fade show">
+                                {{ message }}</div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3 mb-5">
+                    <form action="{{ url_for('contact') }}" method="post" name="contact" id="contact">
+                        {{ form.csrf_token }}
+                        <div class="mb-4">
+                            {{ form.name(class_="form-control", id="name", placeholder="Name") }}
+                        </div>
+                        <div class="mb-4">
+                            {{ form.email(class_="form-control", id="email", placeholder="Email") }}
+                        </div>
+                        <div class="mb-4">
+                            {{ form.industry(class_="form-control", id="industry") }}
+                        </div>
+                        <div class="mb-4">
+                            {{ form.message(class_="form-control", id="message", placeholder="Message") }}
+                        </div>
+                        <div class="my-4">
+                            {{ form.recaptcha }}
+                        </div>
+                        {{ form.submit(class_="btn btn-default btn-sm", id="submit") }}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

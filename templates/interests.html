@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <main class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner">
+                        <h1>Tech Interests</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 offset-md-1 mb-3">
+                    <h2>Using Unpoly with Django</h2>
+                    <p>HTMX, Django Unicorn and now Unpoly, the fact that JavaScript frameworks have been around for many years, the workload by adding
+                        any of these frameworks/libraries increases having to maintain frontend and backend code. With Unpoly hooked up to Django, no need for bloated workloads
+                        <a href="https://spapas.github.io/2023/04/04/using-unpoly-with-django/" target="_blank">Unpoly with Django</a> gives very detailed
+                        and live examples of the power of Unpoly.</p>
+                    <p>Having used Backbone JS in 2014 and Angular, React plus Vue JS, it really must be time to bring some sanity back to the developers world.</p>
+                    <span class="float-end">7th April 2023</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 offset-md-1 mb-5">
+                    <h2>How FastAPI</h2>
+                    <p>FastAPI is most likely my next choice in developing a REST API.
+                    </p>
+                    <p>Have been using Django with DRF for quite some years and have always appreciated its setup and ease of use, I must admit when I heard of FastAPI
+                       I immediately thought, oh no not another framework. The fact that not just the performance is <strong>fast</strong> but the setup, and we don't need to manually create serializers
+                       which is a huge bonus. <a href="https://fastapi.tiangolo.com/" target="_blank">FastAPI</a>
+                    </p>
+                    <p>Built in validation is another plus for this framework and the use of Pydantic for model and schema creation.
+                    </p>
+                    <span class="float-end">11th Feb 2023</span>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
