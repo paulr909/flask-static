@@ -1,4 +1,4 @@
-# Flask Static
+# Flask Static Boilerplate
 
 Using: WTForms, Flask Mail
 
