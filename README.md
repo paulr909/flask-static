@@ -1,4 +1,4 @@
-# Paul Codes
+# Flask Static
 
 Using: WTForms, Flask Mail
 
